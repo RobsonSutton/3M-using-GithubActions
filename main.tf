@@ -1,0 +1,18 @@
+#The configuration for the `remote` backend.
+terraform {
+  cloud {
+    organization = "3M-using-GithubActions"
+
+    workspaces {
+      name = "3M-using-GithubActions"
+    }
+  }
+}
+
+
+# An example resource that does nothing.
+resource "null_resource" "example" {
+  triggers = {
+    value = "A example resource that does nothing!"
+  }
+}
