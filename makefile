@@ -1,11 +1,10 @@
 DOCKER_COMPOSE := docker compose run
 TF := ${DOCKER_COMPOSE} terraform
-Token= ${{ TF_API_TOKEN }}
 
 .PHONY: init
 init: 
-	echo $(Token)
-	cli_config_credentials_token=$(Token) \
+	echo $(cli_config_credentials_token)
+	cli_config_credentials_token=$(cli_config_credentials_token) \
 	${TF} init
 
 .PHONY: lint
