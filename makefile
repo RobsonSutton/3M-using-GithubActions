@@ -1,6 +1,9 @@
 DOCKER_COMPOSE := docker compose run -it 
 TF := ${DOCKER_COMPOSE} terraform
 
+.PHONY: init
+init: 
+	${TF} init
 
 .PHONY: lint
 lint: 
@@ -8,8 +11,8 @@ lint:
 
 .PHONY: build
 build: 
-	${TF} plan
+	${TF} plan -input=false
 
 .PHONY: deploy
 deploy: 
-	${TF} apply --auto-approve
+	${TF} apply --auto-approve -input=false
