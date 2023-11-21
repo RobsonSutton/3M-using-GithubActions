@@ -59,7 +59,7 @@ jobs:
     environment: production
     env:
       TF_CLI_CONFIG_FILE: /opt/app/terraformrc.tfrc
-      TF_VAR_tf_api_token: ${{ secrets.TF_API_TOKEN }}
+      TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
