@@ -1,5 +1,3 @@
-TF_TOKEN_app_terraform_io = "${ secrets.TF_API_TOKEN }"
-
 credentials "app.terraform.io" {
-  token = "${{ TF_TOKEN_app_terraform_io }}"
+  token = "${{ cli_config_credentials_token }}"
 }
