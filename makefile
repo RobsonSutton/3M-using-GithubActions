@@ -7,7 +7,7 @@ init:
 
 .PHONY: lint
 lint: 
-	${TF} fmt --recursive -input=false 
+	${TF} fmt --recursive 
 
 .PHONY: build
 build: 
