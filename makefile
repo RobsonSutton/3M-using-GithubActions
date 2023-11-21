@@ -3,7 +3,7 @@ TF := ${DOCKER_COMPOSE} terraform
 
 .PHONY: init
 init: 
-	${TF} init -input=false 
+	${TF} init
 
 .PHONY: lint
 lint: 
