@@ -1,3 +1,3 @@
 credentials "app.terraform.io" {
-  token = "rSLCCiNLkT11Ow.atlasv1.vltrmgN8HbwxPHA1zCF2mshvLzzRnjZVvQEvartmYGhWpZd3yCw29kwI3FEmRVeVWbo"
+  token = $cli_config_credentials_token
 }
