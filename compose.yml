@@ -2,5 +2,6 @@ services:
   terraform:
     image: hashicorp/terraform
     working_dir: /opt/app/
+    env_file: .env
     volumes:
       - .:/opt/app:rw
