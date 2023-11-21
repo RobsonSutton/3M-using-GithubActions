@@ -2,8 +2,8 @@ DOCKER_COMPOSE := docker compose run
 TF := ${DOCKER_COMPOSE} terraform
 
 .PHONY: init
-init:
-	${TF} init
+init: 
+	${TF} init -input=false 
 
 .PHONY: lint
 lint: 
