@@ -1,3 +1,4 @@
 services:
   terraform:
     image: hashicorp/terraform
+    working_dir: /opt/app/
