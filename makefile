@@ -1,4 +1,4 @@
-DOCKER_COMPOSE := docker compose run -it 
+DOCKER_COMPOSE := docker compose run
 TF := ${DOCKER_COMPOSE} terraform
 
 .PHONY: init
