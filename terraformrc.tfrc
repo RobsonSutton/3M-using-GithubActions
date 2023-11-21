@@ -1,3 +1,5 @@
+TF_TOKEN_app_terraform_io = "${cli_config_credentials_token}"
+
 credentials "app.terraform.io" {
-  token = "${cli_config_credentials_token}"
+  token = TF_TOKEN_app_terraform_io
 }
