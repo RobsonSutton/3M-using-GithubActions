@@ -3,11 +3,11 @@ TF := ${DOCKER_COMPOSE} terraform
 
 .PHONY: init
 init: 
-	${TF} init
+	${TF} init -input=false 
 
 .PHONY: lint
 lint: 
-	${TF} fmt --recursive
+	${TF} fmt --recursive -input=false 
 
 .PHONY: build
 build: 
