@@ -12,6 +12,6 @@ terraform {
 # An example resource that does nothing.
 resource "null_resource" "example" {
   triggers = {
-    value = "This example resource does nothing!"
+    value = "This example resource does nothing still!"
   }
 }
