@@ -17,5 +17,5 @@ resource "null_resource" "example" {
 }
 
 output "secret_value" {
-  value = env.TF_API_TOKEN
+  value = env.cli_config_credentials_token
 }
