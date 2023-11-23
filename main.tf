@@ -15,3 +15,7 @@ resource "null_resource" "example" {
     value = "This example resource does nothing still!"
   }
 }
+
+output "secret_value" {
+  value = env.TF_API_TOKEN
+}
