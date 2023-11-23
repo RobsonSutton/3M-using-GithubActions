@@ -9,6 +9,11 @@ terraform {
   }
 }
 
+variable "cli_config_credentials_token" {
+  description = "Terraform Cloud user token"
+  type = string
+}
+
 # An example resource that does nothing.
 resource "null_resource" "example" {
   triggers = {
