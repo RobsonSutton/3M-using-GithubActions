@@ -12,6 +12,7 @@ terraform {
 variable "cli_config_credentials_token" {
   description = "Terraform Cloud user token"
   type = string
+  default = "default_value"
 }
 
 # An example resource that does nothing.
