@@ -17,5 +17,5 @@ resource "null_resource" "example" {
 }
 
 output "secret_value" {
-  value = env.cli_config_credentials_token
+  value = cli_config_credentials_token
 }
