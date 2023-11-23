@@ -12,8 +12,8 @@ lint:
 
 .PHONY: build
 build: 
-	${TF} plan -var cli_config_credentials_token=$(cli_config_credentials_token)
+	${TF} plan -input=false
 
 .PHONY: deploy
 deploy: 
-	${TF} apply --auto-approve
+	${TF} apply --auto-approve -input=false
