@@ -3,7 +3,6 @@ TF := ${DOCKER_COMPOSE} terraform
 
 .PHONY: init
 init: 
-	TF_TOKEN_app_terraform_io=$(TF_TOKEN_app_terraform_io) \
 	${TF} init
 
 .PHONY: lint
