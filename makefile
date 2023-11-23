@@ -3,7 +3,7 @@ TF := ${DOCKER_COMPOSE} terraform
 
 .PHONY: init
 init: 
-	${TF} init
+	${TF} init -var cli_config_credentials_token=$(cli_config_credentials_token)
 
 .PHONY: lint
 lint: 
