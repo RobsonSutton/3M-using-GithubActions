@@ -9,19 +9,9 @@ terraform {
   }
 }
 
-variable "cli_config_credentials_token" {
-  description = "Terraform Cloud user token"
-  type = string
-  default = "default_value"
-}
-
 # An example resource that does nothing.
 resource "null_resource" "example" {
   triggers = {
-    value = "This example resource does nothing still!"
+    value = "This example resource does nothing!"
   }
-}
-
-output "secret_value" {
-  value = var.cli_config_credentials_token
 }
