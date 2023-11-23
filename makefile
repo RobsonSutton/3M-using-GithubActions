@@ -14,7 +14,7 @@ lint:
 .PHONY: build
 build: 
 	TF_VAR_cli_config_credentials_token=$(TF_VAR_cli_config_credentials_token) \
-	${TF} plan
+	${TF} plan -var TF_VAR_cli_config_credentials_token=$(TF_VAR_cli_config_credentials_token)
 
 .PHONY: deploy
 deploy: 
